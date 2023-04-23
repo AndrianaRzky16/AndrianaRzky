@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with JohnDoe landing page.">
+    <meta name="author" content="Devcrud">
+    <title>Andriana Portofolio</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + JohnDoe main styles -->
+	<link rel="stylesheet" href="assets/css/johndoe.css">
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+
+    <script>
+        // fungsi initialize untuk mempersiapkan peta
+        function initialize() {
+        var propertiPeta = {
+            center:new google.maps.LatLng(-6.7558722,106.7833814,0xd98ff0db30cf6c4f6),
+            zoom:9,
+            mapTypeId:google.maps.MapTypeId.ROADMAP
+        };
+        
+        var peta = new google.maps.Map(document.getElementById("googleMap"), propertiPeta);
+        }
+
+        // event jendela di-load  
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+</head>
+<!-- <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    <a href="components.html" class="btn btn-primary btn-component" data-spy="affix" data-offset-top="600"><i class="ti-shift-left-alt"></i> Components</a> -->
+    <header class="header">
+        <div class="container">
+            <ul class="social-icons pt-3">
+                <li class="social-item"><a class="social-link text-light" href="https://www.facebook.com/AndrianaRizki22"><i class="ti-facebook" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-twitter" aria-hidden="true"></i></a></li>
+                <!-- <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-google" aria-hidden="true"></i></a></li> -->
+                <li class="social-item"><a class="social-link text-light" href="https://www.instagram.com/anndddrrriiiaanaa/"><i class="ti-instagram" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="https://github.com/AndrianaRzky16"><i class="ti-github" aria-hidden="true"></i></a></li>
+            </ul>  
+            <div class="header-content">
+                <h4 class="header-subtitle" >Hello, I am</h4>
+                <h1 class="header-title">Andriana Rizki</h1>
+                <h6 class="header-mono" >PHP Developer</h6>
+                <!-- <button class="btn btn-primary btn-rounded"><i class="ti-printer pr-2"></i>Print Resume</button> -->
+            </div>
+        </div>
+    </header>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
+        <div class="container">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#resume" class="nav-link">Resume</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav brand">
+                    <img src="assets/imgs/IMG_2621.JPG" alt="" class="brand-img">
+                    <li class="brand-txt">
+                        <h5 class="brand-title">Andriana Rizki </h5>
+                        <div class="brand-subtitle">PHP Developer</div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#portfolio" class="nav-link">Portfolio</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a href="#blog" class="nav-link">Blog</a>
+                    </li> -->
+                    <li class="nav-item last-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div id="about" class="row about-section">
+            <div class="col-lg-4 about-card">
+                <h3 class="font-weight-light">Siapa Saya?</h3>
+                <span class="line mb-5"></span>
+                <h5 class="mb-3"><b>PHP Developer </b></h5>
+                <p class="mt-20">Saya merupakan Fresh Graduate dari jurusan Rekayasa Perangkat Lunak dari SMKS Wikrama 1 Garut. Saya merupakan pribadi yang suka dengan bahasa pemrograman dan tertarik untuk berkarir di bidang pengembangan perangkat lunak atau aplikasi. Berbekal latar belakang pendidikan dan kemampuan di bidang IT, saya siap menyumbangkan waktu dan kompetensi saya.</p>
+                <!-- <button class="btn btn-outline-danger"><i class="icon-down-circled2 "></i>Download My CV</button> -->
+            </div>
+            <div class="col-lg-4 about-card">
+                <h3 class="font-weight-light">Info Pribadi</h3>
+                <span class="line mb-5"></span>
+                <ul class="mt40 info list-unstyled">
+                    <li><span>Birthdate</span> : 06/20/2004</li>
+                    <li><span>Email</span> : andrianarizki42@gmail.com</li>
+                    <li><span>Phone</span> : + (62) 85795399833</li>
+                    <!-- <li><span>Skype</span> :  </li> -->
+                    <li><span>Address</span> :  Kp.Benteng RT02/04 Kecamatan.Cicurug Kabupaten.Sukabumi</li>
+                </ul>
+            </div>
+            <div class="col-lg-4 about-card">
+                <h3 class="font-weight-light">Pengembangan</h3>
+                <span class="line mb-5"></span>
+
+                <div class="row">
+                    <div class="col-1 text-danger pt-1"><i class="ti-paint-bucket icon-lg"></i></div>
+                    <div class="col-10 ml-auto mr-3">
+                        <h6><b>Back-End Developer</b></h6>
+                        <p class="subtitle">Di Back-End Developer saya telah menguasai bahasa pemrograman PHP dan juga menguasai framework seperti Laravel.</p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 text-danger pt-1"><i class="ti-stats-up icon-lg"></i></div>
+                    <div class="col-10 ml-auto mr-3">
+                        <h6><b>Front-End Developer</b></h6>
+                        <p class="subtitle">Sedangkan untuk di Front-End Developer saya telah menguasai bahasa pemrograman seperti HTML, CSS, JavaScript dan juga Framework JavaScript yaitu Jquery</p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Resume Section-->
+    <section class="section" id="resume">
+        <div class="container">
+            <h2 class="mb-5"><span class="text-danger">My</span> Resume</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                       <div class="card-header">
+                            <div class="mt-2">
+                                <h4>Experience</h4>
+                                <span class="line"></span>  
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="fw-bold"> PT Robust Creative Media</h5>
+                            <h6 class="title text-danger">August(2022) - October(2022)</h6>
+                            <P><b>Software Developer</b></P>
+                            <P class="subtitle">Selama Praktik Kerja Lapangan selama 3 bulan di PT Robust Creative Media saya telah mempelajari Laravel, React JS, Rest-API, Jquery, Postman dan yang lainnya.</P>
+                        </div> 
+                        <hr>
+                        <div class="card-body">
+                            <h5 class="fw-bold"> Scout Organization </h5>
+                            <h6 class="title text-danger">2021 - 2022</h6>
+                            <P><b>Sekretariat Division</b></P>
+                            <!-- <P class="subtitle"></P> -->
+                        </div>
+                        <hr>
+                        <div class="card-body">
+                            <h5 class="fw-bold"> Wikrama Santri Organization </h5>
+                            <h6 class="title text-danger">2021 - 2023</h6>
+                            <P><b>Sport Division</b></P>
+                            <!-- <P class="subtitle"></P> -->
+                        </div>
+                    </div>                       
+
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                       <div class="card-header">
+                            <div class="mt-2">
+                                <h4>Education</h4>
+                                <span class="line"></span>  
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="title text-danger">2012 - 2018</h6>
+                            <P>Elementary School</P>
+                            <P class="subtitle"><b>Sekolah Dasar Negeri 2 Benteng.</b></P>
+                            <hr>
+                            <h6 class="title text-danger">2018 - 2020</h6>
+                            <P>Junior High School</P>
+                            <P class="subtitle"><b>Madrasah Tsanawiyah AL-Huda.</b></P>
+                            <hr>
+                            <h6 class="title text-danger">2020 - 2023</h6>
+                            <P>Vocatinal High School</P>
+                            <P class="subtitle"><b>SMKS Wikrama 1 Garut.</b></P>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                       <div class="card-header">
+                            <div class="pull-left">
+                                <h4 class="mt-2">Skills</h4>
+                                <span class="line"></span>  
+                            </div>
+                        </div>
+                        <div class="card-body pb-2">
+                            <h6><b>Laravel</b></h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 95%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6><b>PHP</b></h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 95%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6><b>MYSQL</b></h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 93%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                           <h6><b>HTML &amp; CSS</b></h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 97%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6><b>JavaScript</b></h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 87%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6><b>Jquery</b></h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 87%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="section bg-custom-gray" id="portfolio">
+        <div class="container">
+            <h1 class="mb-5"><span class="text-danger">My</span> Portfolio</h1>
+            <div class="portfolio">
+                <!-- <div class="filters"> -->
+                    <a href="#" data-filter=".web" class="active">
+                        Web
+                    </a>
+                </div>
+                <hr>
+                <div class="portfolio-container"> 
+                    <div class="col-md-6 col-lg-4 web new">
+                        <div class="portfolio-item">
+                            <img src="assets/imgs/casino-app_signed_in__1__png by uixNinja.png" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                            <div class="content-holder">
+                                <a class="img-popup" href="assets/imgs/web-1.jpg"></a>
+                                <div class="text-holder">
+                                    <hr>
+                                    <h6 class="title">WEB Pembayaran SPP</h6>
+                                    <p class="subtitle">Technology : Laravel + Jquery + Ajax</p>
+                                </div>
+                            </div>   
+                        </div>             
+                    </div>
+                    <hr>
+                    <div class="col-md-6 col-lg-4 web new">
+                        <div class="portfolio-item">
+                            <img src="assets/imgs/Game dashboard.png" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                            <div class="content-holder">
+                                <a class="img-popup" href="assets/imgs/web-2.jpg"></a>
+                                <div class="text-holder">
+                                    <hr>
+                                    <h6 class="title">WEB Perpustakaan</h6>
+                                    <p class="subtitle">Technology : Laravel + Jquery + Ajax</p>
+                                </div>
+                            </div> 
+                        </div>                         
+                    </div>
+                    <hr>
+                    <div class="col-md-6 col-lg-4 web new">
+                        <div class="portfolio-item">
+                            <img src="assets/imgs/Project management dashboard.png" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                            <div class="content-holder">
+                                <a class="img-popup" href="assets/imgs/advertising-2.jpg"></a>
+                                <div class="text-holder">
+                                    <hr>
+                                    <h6 class="title">Unit Kesehatan Sekolah (UKS)</h6>
+                                    <p class="subtitle">Technology : Laravel + Jquery + Ajax + Bootstrap</p>
+                                </div>
+                            </div> 
+                        </div>                         
+                    </div>
+                    <hr>
+                    <div class="col-md-6 col-lg-4 web new">
+                        <div class="portfolio-item">
+                            <img src="assets/imgs/Dashboard Feature.png" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                            <div class="content-holder">
+                                <a class="img-popup" href="assets/imgs/advertising-2.jpg"></a>
+                                <div class="text-holder">
+                                    <hr>
+                                    <h6 class="title">Portal Berita</h6>
+                                    <p class="subtitle">Technology : ReactJS + JavaScript</p>
+                                </div>
+                            </div> 
+                        </div>                         
+                    </div>
+<hr>
+                    <div class="col-md-6 col-lg-4 web new">
+    <div class="portfolio-item">
+        <img src="assets/imgs/Dashboard-UI-Konzept - Dunkles Thema.png" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+        <div class="content-holder">
+            <a class="img-popup" href="assets/imgs/advertising-2.jpg"></a>
+            <div class="text-holder">
+                <hr>
+                <h6 class="title">Web Ecommerce</h6>
+                <p class="subtitle">Technology : Laravel + Jquery + Ajax + Bootstrap</p>
+            </div>
+        </div> 
+    </div>                         
+                    </div>
+                    <hr>
+
+                    <div class="col-md-6 col-lg-4 web new">
+                        <div class="portfolio-item">
+                            <img src="assets/imgs/Dashboard - Tablet App.png" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                            <div class="content-holder">
+                                <a class="img-popup" href="assets/imgs/advertising-2.jpg"></a>
+                                <div class="text-holder">
+                                    <hr>
+                                    <h6 class="title">Point of Sale (POS)</h6>
+                                    <p class="subtitle">Technology : Laravel + Jquery + Ajax + Bootstrap</p>
+                                </div>
+                            </div> 
+                        </div>                         
+                    </div>
+                    <hr>
+    </section>
+    <!-- End of portfolio section -->
+
+    </section> -->
+
+    <div class="section contact" id="contact">
+        <div id="googleMap" class="map"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="contact-form-card">
+                        <h4 class="contact-title">Send a message</h4>
+                        <form action="">
+                            <!-- <div class="form-group">
+                                <input  class="form-control" type="text" placeholder="Name *" required>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="email" placeholder="Email *" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" id=" placeholder="Message *" rows="7" required></textarea>
+                            </div> -->
+                            <div class="form-group ">
+                                <h4>Contact Me</h4>
+                                    <h5>Want more information ?</h5>
+                                    <h6>If you want to know more information about me, please contact me on email.</h6>
+                                <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=andrianarizki42@gmail.com" target="_blank" title="My Email">andrianarizki42@gmail.com</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="contact-info-card">
+                        <h4 class="contact-title">Get in touch</h4>
+                        <div class="row mb-2">
+                            <div class="col-1 pt-1 mr-1">
+                                <i class="ti-mobile icon-md"></i>
+                            </div>
+                            <div class="col-10 ">
+                                <h6 class="d-inline">Phone : <br> <span class="text-muted">+ (62) 857-9539-9833</span></h6>
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-1 pt-1 mr-1">
+                                <i class="ti-map-alt icon-md"></i>
+                            </div>
+                            <div class="col-10">
+                                <h6 class="d-inline">Address :<br> <span class="text-muted">Kp.Benteng RT02/04 Kec.Cicurug Kab.Sukabumi</span></h6>
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-1 pt-1 mr-1">
+                                <i class="ti-envelope icon-md"></i>
+                            </div>
+                            <div class="col-10">
+                                <h6 class="d-inline">Email :<br> <span class="text-muted">andrianarizki42@gmail.com</span></h6>
+                            </div>
+                        </div>
+                        <ul class="social-icons pt-4">
+                            <li class="social-item"><a class="social-link text-dark" href="https://www.facebook.com/AndrianaRizki22"><i class="ti-facebook" aria-hidden="true"></i></a></li>
+                            <li class="social-item"><a class="social-link text-dark" href="https://twitter.com/Andrianarizki4"><i class="ti-twitter" aria-hidden="true"></i></a></li>
+                            <!-- <li class="social-item"><a class="social-link text-dark" href="#"><i class="ti-google" aria-hidden="true"></i></a></li> -->
+                            <li class="social-item"><a class="social-link text-dark" href="https://www.instagram.com/anndddrrriiiaanaa/"><i class="ti-instagram" aria-hidden="true"></i></a></li>
+                            <li class="social-item"><a class="social-link text-dark" href="https://github.com/AndrianaRzky16"><i class="ti-github" aria-hidden="true"></i></a></li>
+                        </ul> 
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer class="footer py-3">
+        <div class="container">
+            <p class="small mb-0 text-light">
+                &copy; <script>document.write(new Date().getFullYear())</script> Created With <i class="ti-heart text-danger"></i> By <a href="" target="_blank"><span class="text-danger" title="Bootstrap 4 Themes and Dashboards">Andriana Rizki</span></a> 
+            </p>
+        </div>
+    </footer>
+
+	<!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Isotope  -->
+    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
+    
+    <!-- Google mpas -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
+
+    <!-- JohnDoe js -->
+    <script src="assets/js/johndoe.js"></script>
+
+</body>
+</html>
